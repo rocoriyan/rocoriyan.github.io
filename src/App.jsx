@@ -1,33 +1,21 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import ProjectCard from './assets/components/ProjectCard'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <h1>Ryan Corrigan</h1>
+      <p>Junior developer with experience in Full Stack web development and making programs with C#.</p>
+      <h2>Projects</h2>
+      <div className="projectsContainer">
+        <ProjectCard proj="Drumkit" link="https://rocoriyan.github.io/CdNtnWeek3/drums.html"/>
+        <ProjectCard proj="Keycode Info" link="https://rocoriyan.github.io/CdNtnWeek3/keypress.html"/>
+        <ProjectCard proj="React Calculator" link="https://rocoriyan.github.io/CdNtnWeek5/#/calculator"/>
+        <ProjectCard proj="React To-do List" link="https://rocoriyan.github.io/CdNtnWeek5/#/todo"/>
+        <ProjectCard proj="Cats4Life" link="https://rocoriyan.github.io/CdNtnWeek5/#/calculator"/>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
