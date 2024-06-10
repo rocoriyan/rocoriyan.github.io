@@ -3,4 +3,10 @@
 }
 .projectCard img{
     width: 100%;
+    border: 2px var(--darkSecondary) solid;
+    border-radius: 5px;
+}
+.projectCard h3{
+    margin-top: 5px;
+    margin-bottom: 5px;;
 }

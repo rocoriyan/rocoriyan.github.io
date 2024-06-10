@@ -1,5 +1,7 @@
 import ProjectCard from './assets/components/ProjectCard'
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { VscGithubAlt } from "react-icons/vsc";
+import { IoIosMail } from "react-icons/io";
 import './App.css'
 
 function App() {
@@ -7,18 +9,27 @@ function App() {
   return (
     <>
       <div className='landing'>
-        <h1>Hi, I'm Ryan!</h1>
-        <p>I'm a junior developer with experience in React, Node.js, and C#</p>
+        <div className='landing-main-left'>
+          <VscGithubAlt size="145px" />
+        </div>
+        <div className='landing-main-right'>
+          <h1>Hi, I'm Ryan!</h1>
+          <p>Junior developer with experience in React, Node.js, and C#</p>
+          <div className='landing-buttons'>
+            <a href='mailto:rcorrigan.work@gmail.com/' target="_blank"><IoIosMail size="30px" className='linkIcon'/></a>
+            <a href='https://github.com/rocoriyan' target="_blank"><FaGithub size="25px" className='linkIcon' /></a>
+            <a href='https://www.linkedin.com/in/ryan-c-711a45301/' target="_blank"><FaLinkedin size="25px" className='linkIcon' /></a>
+          </div>
+        </div>
       </div>
-      <div className='about'>
+      <div className='about sect'>
         <h2>About me</h2>
         <div className='about-desc'>
           <p>Hello, welcome to my portfolio!</p>
           <p>I'm Ryan, an aspiring developer based in Manchester. I've been coding since I was 12, 
             falling in love with the problem-solving aspects in my GCSEs and being struck with a passion for it 
             that's stuck with me since.</p>
-          <p>I have experience with games development, demonstrated by the raycasting maze game I developed in 
-            MonoGame during my A-levels and the many games I've made in React; with web development, as 
+          <p>I have experience with games development, having developed a raycasting maze game and many others in React; with web development, as 
             seen in my work with my development of static websites (both basic and with React), and full-stack 
             websites; and with simple console app development, as shown by my work with Python, C# and Node.js.</p>
           <p>I'm very familiar with object-oriented programming, utilizing CLI applications and working with GitHub. 
@@ -27,6 +38,9 @@ function App() {
             development bootcamp with Code Nation, and my consistent usage of sites such as Codewars, to keep my 
             knowledge fresh and to learn from people with more experience.
           </p>
+        </div>
+        {/*
+        <div className='highlights sect'>
           <h2>Why work with me?</h2>
           <ul>
             <li>
@@ -66,25 +80,21 @@ function App() {
             </li>
           </ul>
         </div>
+        */}   {/* commented out because its too wordy. will workshop */}
       </div>
-      <div className='projects'>
+      <div className='projects sect'>
         <h2>Projects</h2>
         <dd>
           <div className='projects-container'>
+            <ProjectCard proj="Nintendo Clone" link="https://rocoriyan.github.io/nintendo-clone/"/>
             <ProjectCard proj="Drumkit" link="https://rocoriyan.github.io/CdNtnWeek3/drums.html"/>
             <ProjectCard proj="Keycode Info" link="https://rocoriyan.github.io/CdNtnWeek3/keypress.html"/>
             <ProjectCard proj="React Calculator" link="https://rocoriyan.github.io/CdNtnWeek5/#/calculator"/>
             <ProjectCard proj="React To-do List" link="https://rocoriyan.github.io/CdNtnWeek5/#/todo"/>
             <ProjectCard proj="Cats4Life" link="https://rocoriyan.github.io/CdNtnWeek5/#/calculator"/>
+            <ProjectCard proj="gamer4rum" link="https://github.com/ben02041992/final_project_forum_FE"/>
           </div>
         </dd>
-      </div>
-      <div className='socials'>
-        <h2>Where you can find me</h2>
-        <ul>
-          <li><a href='https://github.com/rocoriyan' target="_blank"><FaGithub/> GitHub</a></li>
-          <li><a href='https://www.linkedin.com/in/ryan-c-711a45301/' target="_blank"><FaLinkedin/> LinkedIn</a></li>
-        </ul>
       </div>
     </>
   )
