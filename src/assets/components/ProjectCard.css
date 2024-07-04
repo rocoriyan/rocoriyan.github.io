@@ -1,5 +1,6 @@
 .projectCard{
-    width: 300px;
+    width: 31%;
+    margin-bottom: 10px;
 }
 .projectCard img{
     width: 100%;
@@ -9,4 +10,16 @@
 .projectCard h3{
     margin-top: 5px;
     margin-bottom: 5px;;
+}
+
+@media (max-width: 800px) {
+    .projectCard{
+        width: 48%;
+    }
+}
+
+@media (max-width: 550px) {
+    .projectCard{
+        width: 100%;
+    }
 }

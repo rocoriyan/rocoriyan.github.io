@@ -10,15 +10,15 @@ function App() {
     <div className='pcontent'>
       <div className='landing'>
         <div className='landing-main-left'>
-          <VscGithubAlt size="145px" />
+          <VscGithubAlt className='githubIcon'/>
         </div>
         <div className='landing-main-right'>
           <h1>Hi, I'm Ryan!</h1>
           <p>Junior developer with experience in React, Node.js, and C#</p>
           <div className='landing-buttons'>
-            <a href='mailto:rcorrigan.work@gmail.com/' target="_blank"><IoIosMail size="30px" className='linkIcon'/></a>
-            <a href='https://github.com/rocoriyan' target="_blank"><FaGithub size="25px" className='linkIcon' /></a>
-            <a href='https://www.linkedin.com/in/ryan-c-711a45301/' target="_blank"><FaLinkedin size="25px" className='linkIcon' /></a>
+            <a href='mailto:rcorrigan.work@gmail.com/' target="_blank"><IoIosMail className='linkIcon mail'/></a>
+            <a href='https://github.com/rocoriyan' target="_blank"><FaGithub className='linkIcon' /></a>
+            <a href='https://www.linkedin.com/in/ryan-c-711a45301/' target="_blank"><FaLinkedin className='linkIcon' /></a>
           </div>
         </div>
       </div>
