@@ -30,7 +30,7 @@ function App() {
             with a passion for it that's stuck with me since. I have a lot of experience with
             web development, some game development with MonoGame, and I am very confident with
             C#. Alongside a 12 week software development bootcamp, I've also completed
-            a course in Cyber Security course.</p>
+            a course in Cyber Security.</p>
           <p>Technology is something I adore, and I would love nothing more than to work with it 
             and continue to learn about it for the rest of my life.</p>
         </div>
