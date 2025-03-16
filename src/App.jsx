@@ -35,12 +35,6 @@ function App() {
             and continue to learn about it for the rest of my life.</p>
         </div>
       </div>
-      {/* <div className='skillset sect'>
-        <h2>Skillset</h2>
-        <div className='skills-container sect-content'>
-          
-        </div>
-      </div>  */}
       <div className='projects sect'>
         <h2>Projects</h2>
           <div className='projects-container sect-content'>
@@ -49,8 +43,8 @@ function App() {
             <ProjectCard proj="Keycode Info" link="https://rocoriyan.github.io/CdNtnWeek3/keypress.html"/>
             <ProjectCard proj="React Calculator" link="https://rocoriyan.github.io/CdNtnWeek5/#/calculator"/>
             <ProjectCard proj="React To-do List" link="https://rocoriyan.github.io/CdNtnWeek5/#/todo"/>
-            <ProjectCard proj="Cats4Life" link="https://rocoriyan.github.io/CdNtnWeek5/#/calculator"/>
-            <ProjectCard proj="gamer4rum" link="https://github.com/ben02041992/final_project_forum_FE"/>
+            <ProjectCard proj="Cats4Life" link="https://jkuriata.github.io/Cats4Life/"/>
+            <ProjectCard proj="gamer4rum" link="https://github.com/rocoriyan/final_project_forum_FE"/>
           </div>
       </div>
     </div>
